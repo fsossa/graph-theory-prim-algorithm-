@@ -4,20 +4,11 @@
 var ensembleArretes = []; var poids = 0; var ensembleSommets = []; var ensembleArretesDeSommmets = [];
 
 function prim(graph){
-
-    // console.log("debut => ", ensembleSommets);
-    // console.log(ensembleArretes);
-    // console.log(poids);
-    // console.log(graph);
-    // console.log(Object.entries(graph).length === 0);
+    
     while (Object.entries(graph).length > 0){
         getNextArrete(graph);
     };
 
-    // console.log("fin => ", ensembleSommets);
-    // console.log(ensembleArretes);
-    // console.log(poids);
-    // console.log(graph);
     return {
         t : ensembleArretes,
         p : poids
